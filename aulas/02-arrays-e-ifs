@@ -1,0 +1,31 @@
+var produtos = ["Notebook", "Computador", "Teclado", "Mouse", "Monitor", "TV", "Microfone"]
+
+alert("Trazer dados de forma simples")
+
+for(i=0; i<produtos.length; i++){ // produtos.length retorna o tamanho do ARRAY
+    alert( "["+(i+1)+"]" + ". " + produtos[i])
+}
+
+alert("\nProdutos que tenham mais que 5 letras")
+
+for(i=0; i<produtos.length; i++){
+    if (produtos[i].length > 5) { // produtos[i].length retorna o tamanho da STRING
+        alert( "["+(i+1)+"]" + ". " + produtos[i])
+    }
+}
+
+alert("\nProdutos que comecem com a letra M")
+
+for(i=0; i<produtos.length; i++){
+    if (produtos[i][0] == "M") { // produtos[i][index] retorna o caractere presente naquele index da string
+        alert("["+(i+1)+"]" + ". " + produtos[i])
+    }
+}
+
+alert("\nProdutos que tenham menos que 3 letras")
+
+for(i=0; i<produtos.length; i++){
+    if (produtos[i].length < 3) { // produtos[i].length retorna o tamanho da STRING
+        alert( "["+(i+1)+"]" + ". " + produtos[i])
+    }
+}
